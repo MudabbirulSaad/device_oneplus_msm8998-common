@@ -67,6 +67,7 @@
             requirement is updated here.
         -->
         <version>1.0</version>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.qccsyshal</name>
         <transport>hwbinder</transport>
