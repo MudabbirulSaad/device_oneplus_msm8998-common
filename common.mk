@@ -336,6 +336,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GoogleCamera
 
+PRODUCT_PACKAGES += \
+    RemovePkgs
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/system/etc/permissions/com.ngcam.camera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.ngcam.camera.xml
 
