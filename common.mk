@@ -332,6 +332,9 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 # Prebuilts
 PRODUCT_PACKAGES += \
     GoogleCamera
