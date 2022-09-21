@@ -46,6 +46,7 @@ def CopyBlobs(input_zip, output_zip):
       common.ZipWriteStr(output_zip, "firmware-update/" + fn, input_zip.read(f))
 
 def AddVendorAssertion(info):
+  info.script.AppendExtra('ui_print(">> Visit mudabbirulsaad.com/aosp for support and further information. :)");')
   cmd = 'assert(oneplus.file_exists("/dev/block/bootdevice/by-name/vendor") == "1" || \
     abort("Error: Vendor partition doesn\'t exist!"););'
   info.script.AppendExtra(cmd)
