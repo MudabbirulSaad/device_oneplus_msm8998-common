@@ -241,7 +241,8 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.radio.sh \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.color.rc
 
 # IFAA (Fingerprint support for Alipay)
 PRODUCT_PACKAGES += \
