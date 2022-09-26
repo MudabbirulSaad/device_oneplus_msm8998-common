@@ -23,6 +23,7 @@
 #
 
 NEED_AIDL_NDK_PLATFORM_BACKEND  := true
+SELINUX_IGNORE_NEVERALLOWS := true
 
 PLATFORM_PATH := device/oneplus/msm8998-common
 
