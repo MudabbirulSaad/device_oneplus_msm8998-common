@@ -22,6 +22,8 @@
 # definition file).
 #
 
+RELAX_USES_LIBRARY_CHECK := true
+
 PLATFORM_PATH := device/oneplus/msm8998-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
