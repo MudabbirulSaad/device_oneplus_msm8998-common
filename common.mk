@@ -154,6 +154,13 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     vendor.qti.hardware.camera.device@1.0
 
+# Prebuilts
+PRODUCT_PACKAGES += \
+    GoogleCamera
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/system/etc/permissions/com.ngcam.camera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.ngcam.camera.xml
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl:64 \
