@@ -33,15 +33,16 @@ PRODUCT_COMPRESSED_APEX := false
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-elixir
+
+# Rounded corners
 ifeq ($(TARGET_USES_ROUNDED_CORNER),true)
+
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage \
     $(LOCAL_PATH)/overlay-extra
-else
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+
 endif
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
